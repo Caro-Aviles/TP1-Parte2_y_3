@@ -27,3 +27,8 @@ df_order_payments['payment_value'] = df_order_payments['payment_value'].fillna(0
 prom_pago_pedido = df_order_payments['payment_value'].mean()
 #IMPRIMIENDO EL PROMEDIO
 print ("El promedio del valor de pago por pedido es: ", prom_pago_pedido)
+
+#DETERMINANDO LA CATEGORIA DE PRODUCTO MAS VENDIDA
+categoria_mas_vendida = df_products['product_category_name'].value_counts().idxmax()
+#IMPRIMIENDO LA CATEGORIA MAS VENDIDA
+print("La categoría de producto más vendida es: ", categoria_mas_vendida)
