@@ -32,3 +32,8 @@ print ("El promedio del valor de pago por pedido es: ", prom_pago_pedido)
 categoria_mas_vendida = df_products['product_category_name'].value_counts().idxmax()
 #IMPRIMIENDO LA CATEGORIA MAS VENDIDA
 print("La categoría de producto más vendida es: ", categoria_mas_vendida)
+
+#CALCULANDO EL NUMERO TOTAL DE PEDIDOS REALIZADOS
+num_pedidos_realizados = df_orders.index.nunique()
+#IMPRIMIENDO EL NUMERO TOTAL DE NICOS
+print ("El numero total de pedidos realizados es: ", num_pedidos_realizados)
